@@ -1,0 +1,247 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: rgb(142, 142, 255);
+    color: black;
+    height: 100px;
+    display: flex;
+    justify-content:space-between ;
+    align-items: center;
+}
+.header a {
+    color: black;
+}
+
+.nama-header {
+    float: left;
+    font-size: 40px;
+    padding: 25px 45px;
+}
+
+.list-header ul {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.list-header ul li{
+    padding: 0 10px;
+}
+
+.list-header a {
+    color: black;
+}
+
+.main {
+    padding: 10px 70px;
+}
+
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+li {
+    list-style: none;
+    float :left;
+    font-size: 20px;
+}
+
+.penawaran {
+    display: flex;
+    height: auto;
+    margin-top: 10px;
+    width:auto;
+    justify-content: space-around;
+}
+
+.nama-penawaran {
+    border-bottom: 2px solid #dee7ec;
+    font-size: 28px;
+    padding-bottom: 15px;
+    margin-bottom: 50px;
+}
+
+.penawaran-item{
+    float: left;
+    width:auto ;
+}
+
+.penawaran-item p{
+    width: auto;
+    font-size: 24px;
+    margin-top: 30px;
+}
+
+.footer { 
+    background-color: #2f5167;
+    color: #fff;
+    height: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    
+}
+
+.nama-footer {
+    font-size: 20px;
+}
+
+.about-me {
+    height: 100px;
+    margin-top: 3px;
+}
+
+.data-diri {
+    border-bottom: 10px solid #dee7ec;
+    font-size: 50px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    margin-bottom: 50px;
+}
+
+.data-item{
+    float: left;
+    margin-right: 200px;
+    border-radius: 50%;
+    font-size: 35px;
+    padding: 25px 45px;
+}
+
+.dark-mode {
+    background-color: black;
+    color: white;
+}
+
+#switch {
+    background-color: rgb(142, 142, 255);
+    border: none;
+}
+
+.loginBox {
+	width: 350px;
+	margin: 80px auto;
+	padding: 30px 20px;
+}
+
+.login {
+    text-align: center;
+	text-transform: uppercase;
+}
+
+.coba-login {
+    padding-bottom: 15px;
+}
+
+label{
+	font-size: 11pt;
+}
+
+.login-item{
+	box-sizing : border-box;
+	width: 100%;
+	padding: 10px;
+	font-size: 11pt;
+	margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.login a {
+    color: rgb(61, 61, 124);
+}
+
+.button-login{
+	background: rgb(142, 142, 255);
+	color: black;
+	font-size: 11pt;
+	width: 100%;
+	border: none;
+	border-radius: 10px;
+	padding: 10px 20px;
+}
+
+.regisBox{
+	width: 400px;
+	margin: auto;
+	padding: 30px 20px;
+}
+
+.regis {
+    text-align: center;
+	text-transform: uppercase;
+}
+
+.coba-regis {
+    padding-bottom: 15px;
+}
+
+.regis-item{
+	box-sizing : border-box;
+	width: 100%;
+	padding: 10px;
+	font-size: 11pt;
+	margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.button-regis{
+	background: rgb(142, 142, 255);
+	color: black;
+	font-size: 11pt;
+	width: 100%;
+	border: none;
+	border-radius: 10px;
+	padding: 10px 20px;
+}
+.button-batal{
+    background: rgb(142, 142, 255);
+    color: black;
+    font-size: 11pt;
+    font-weight: 700;
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 50px;
+    text-decoration: none;
+}
+
+.button-batal:hover {
+    background-color: rgb(61, 61, 124);
+}
+
+.button-order {
+    background: rgb(142, 142, 255);
+    color: black;
+    font-size: 11pt;
+    font-weight: 700;
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 50px;
+    text-decoration: none;
+}
+
+.button-order:hover {
+    background-color: rgb(61, 61, 124);
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
+}

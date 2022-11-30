@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+thead tr {
+  background-color: rgb(142, 142, 255);
+  color: black;
+}
+
+th {
+  padding: 10px 5px;
+}
+
+td {
+  height: 40px;
+}
+
+table {
+  width: 100%;
+}
+
+table a {
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.pesananBox {
+	width: 350px;
+	margin: 80px auto;
+	padding: 30px 20px;
+}
+
+.pesanan {
+  text-align: center;
+	text-transform: uppercase;
+}
+
+.coba-pesan {
+    padding-bottom: 15px;
+}
+
+label {
+	font-size: 11pt;
+}
+
+.pesan-item{
+	box-sizing : border-box;
+	width: 100%;
+	padding: 10px;
+	font-size: 11pt;
+	margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+.tabel {
+  margin: 0 10px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.daftar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tambah {
+  text-decoration: none;
+  padding: 8px 5px;
+  border-radius: 5px;
+  background-color: rgb(61, 61, 124);
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+
+.tambah:hover {
+  background-color: rgb(61, 61, 124);
+}
+
+.button-order {
+  background: rgb(142, 142, 255);
+  color: black;
+  font-size: 11pt;
+  font-weight: 700;
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 50px;
+  text-decoration: none;
+}
+
+.button-order:hover {
+  background-color: rgb(61, 61, 124);
+}
+
+.button-edit {
+  width: 100%;
+  height: 50px;
+  margin-top: 30px;
+  font-size: larger;
+  border-style: none;
+  border-radius: 10px;
+  background-color: rgb(142, 142, 255);
+  color: black;
+}
+
+.button-edit:hover {
+  background-color: rgb(61, 61, 124);
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
+}
