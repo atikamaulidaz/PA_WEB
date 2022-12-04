@@ -15,6 +15,12 @@ $id_user = $_SESSION['id_user'];
     <link rel="stylesheet" href="css/styleData.css">
     <link rel="stylesheet" href="css/stylesheet.css">
     <link rel="stylesheet" href="css/styleSearch.css">
+    <script type="text/javascript" charset="utf8" src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.11.1.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+<link href="https://cdn.datatables.net/1.10.9/css/jquery.dataTables.min.css"/>
+<script src = https://code.jquery.com/jquery-3.5.1.js></script>
+<script src="https://cdn.datatables.net/1.10.9/js/jquery.dataTables.min.js"></script>
     <title>DAFTAR PESANAN</title>
 </head>
 
@@ -34,7 +40,7 @@ $id_user = $_SESSION['id_user'];
     </div>
     <br><br>
     <div class="tabel center" style="overflow-x: auto;">
-        <table>
+        <table id="laundry" class="display" width="100%" cellspacing="0">
             <thead>
                 <tr>
                     <th colspan="10" class="thead">
@@ -55,19 +61,34 @@ $id_user = $_SESSION['id_user'];
             </thead>
             <tbody>
                 <?php
-                $query = mysqli_query($db, "SELECT * FROM laundry INNER JOIN gambar ON laundry.id=gambar.id WHERE id_user=$id_user" );
-                $i = 1;
-                while ($row = mysqli_fetch_assoc($query)) {
+                $batas = 2;
+                $halaman = isset($_GET['halaman'])?(int)$_GET['halaman'] : 1;
+                $halaman_awal = ($halaman>1) ? ($halaman * $batas) - $batas : 0;	
+    
+                $previous = $halaman - 1;
+                $next = $halaman + 1;
+                
+                $data = mysqli_query($db, "SELECT * FROM laundry INNER JOIN gambar ON laundry.id=gambar.id WHERE id_user=$id_user" );
+                $jumlah_data = mysqli_num_rows($data);
+                $total_halaman = ceil($jumlah_data / $batas);
+    
+                $data_laundry = mysqli_query($db,"SELECT * FROM laundry INNER JOIN gambar ON laundry.id=gambar.id WHERE id_user=$id_user limit $halaman_awal, $batas");
+                $nomor = $halaman_awal+1;
+
+                while ($row = mysqli_fetch_assoc($data_laundry)) {
                 ?>
                 <tr>
-                    <td><?= $i ?></td>
-                    <td nowrap><?=$row['nama']?></td>
-                    <td><?=$row['alamat']?></td>
-                    <td><?=$row['telpon']?></td>
-                    <td><?=$row['email']?></td>
-                    <td><?=$row['jenis']?></td>
-                    <td><img src="gambar/<?=$row['file']?>" width="60px" ></td>
-                    <td><?=$row['waktu']?></td>
+                    
+                    <td><?= $nomor++ ?></td>
+                    <td nowrap><?=$row['nama'];?></td>
+                    <td><?=$row['alamat'];?></td>
+                    <td><?=$row['telpon'];?></td>
+                    <td><?=$row['email'];?></td>
+                    <td><?=$row['jenis'];?></td>
+                    <td><img src="gambar/<?=$row['file'];?>" width="60px" ></td>
+                    <td><?=$row['waktu'];?></td>
+
+                    
 
                     <td class="edit">
                         <a href="edit.php?id=<?=$row['id']?>">
@@ -81,12 +102,31 @@ $id_user = $_SESSION['id_user'];
                     </td>
                 </tr>
                 <?php
-                $i++;
+                // $i++;
                 }?>
             </tbody>
         </table>
+		<nav>
+			<ul class="pagination justify-content-center">
+				<li class="page-item">
+					<a class="page-link" <?php if($halaman > 1){ echo "href='?halaman=$previous'"; } ?>>Previous</a>
+				</li>
+				<?php 
+				for($x=1;$x<=$total_halaman;$x++){
+					?> 
+					<li class="page-item"><a class="page-link" href="?halaman=<?php echo $x ?>"><?php echo $x; ?></a></li>
+					<?php
+				}
+				?>				
+				<li class="page-item">
+					<a  class="page-link" <?php if($halaman < $total_halaman) { echo "href='?halaman=$next'"; } ?>>Next</a>
+				</li>
+			</ul>
+		</nav>
     </div>
     <script src="javascript/jquery.js"></script>
+
+</script>
 </body>
 
 </html>
