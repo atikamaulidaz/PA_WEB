@@ -22,7 +22,7 @@ $username = $_SESSION["username"];
         <div class="list-header">
             <ul>
                 <li><button id="switch"><img src="images/night-mode.png" width="50px" height="50px"></button></li>
-                <li ><a href="http://localhost/Proyek-Akhir-WEB/beranda.php" style="text-decoration: none;">Home</a></li>
+                <li ><a href="http://localhost/PA_WEB/beranda.php" style="text-decoration: none;">Home</a></li>
                 <li><a href="profile.php" style="text-decoration: none;">Profile</a></li>
                 <li><a href="pesan.php" style="text-decoration: none;">Buat Pesanan</a></li>
                 <li><a href="tabel-pesanan.php" style="text-decoration: none;">Lihat Pesanan</a></li>

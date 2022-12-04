@@ -84,7 +84,7 @@
 <!-- Container (About Laundry Section) -->
 <div id="about" class="container text-center">
   <h3>LAUNDRY</h3>
-  <p><em>Yuk Lundry!</em></p>
+  <p><em>Yuk Laundry!</em></p>
   <p>Takut pakaian Anda rusak karna asal cuci? Ingin praktis, mudah dan Hemat. Mobilitas yang sangat tinggi, sehingga tidak sempat untuk mengurusinya sendiri Ingin menghilangkan noda di pakaian ( noda tinta, getah & Minyak ) ingin pakaian lebih bersih, awet dan wangi Ingin tetap nyaman dan terlihat baru meskipun sering di cuci, yuks ke delivery laundry express kami di jamin amanah 1000%</p>
 
 </div>
