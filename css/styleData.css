@@ -41,17 +41,14 @@ table a {
     padding-bottom: 15px;
 }
 
-label {
-	font-size: 11pt;
-}
-
 .pesan-item{
 	box-sizing : border-box;
 	width: 100%;
 	padding: 10px;
 	font-size: 11pt;
 	margin-bottom: 20px;
-  border-radius: 10px;
+  border-color: cadetblue;
+  border-radius: 20%;
 }
 
 .tabel {

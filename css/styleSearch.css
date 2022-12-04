@@ -18,6 +18,20 @@
     border:none;
     border-radius: 10px;
 }
+
+.button-sort {
+    float: left;
+    align-items: center;
+    font-size: small;
+    background-color: rgb(255, 255, 255);
+    border:none;
+    color: rgb(78, 75, 75);
+    padding-left: 1rem;
+    padding-bottom: 3px;
+    padding-top: 3px;
+    padding-right: 5rem;
+}
+
 .col-1 {width: 8.33%;}
 .col-2 {width: 16.66%;}
 .col-3 {width: 25%;}
