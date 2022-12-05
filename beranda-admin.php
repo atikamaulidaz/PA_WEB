@@ -24,7 +24,7 @@ require "koneksi.php";
 
 <body>
     <div class="header">
-        <div class="nama-header"><a href="beranda-admin.php" style="text-decoration: none;" data-toggle="tooltip" title="Kembali Ke Halaman Sebelumnya">Laundry Express</a></div>
+        <div class="nama-header">Laundry Express</div>
         <div class="list-header">
             <ul>
                 <li><button id="switch"><img src="images/night-mode.png" width="50px" height="50px"></button></li>
