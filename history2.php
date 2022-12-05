@@ -36,7 +36,6 @@ require "koneksi.php";
         <div class="nama-header">Laundry Express</div>
         <div class="list-header">
             <ul>
-                <li><button id="switch"><img src="images/night-mode.png" width="50px" height="50px"></button></li>
                 <li><a href="http://localhost/PA_WEB/beranda-admin.php" style="text-decoration: none;">Home</a></li>
             </ul> 
         </div>

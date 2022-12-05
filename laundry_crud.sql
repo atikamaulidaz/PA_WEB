@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 14, 2022 at 01:48 PM
+-- Generation Time: Dec 05, 2022 at 02:05 AM
 -- Server version: 10.4.21-MariaDB
 -- PHP Version: 8.0.11
 
@@ -45,7 +45,12 @@ INSERT INTO `gambar` (`id_gambar`, `id`, `nama_file`, `file`, `waktu`) VALUES
 (35, 56, 'Rumah Puput', 'Rumah Puput.jfif', '2022-11-14 20:39:05'),
 (36, 57, 'Rumah kakak', 'Rumah kakak.jpg', '2022-11-14 20:40:03'),
 (37, 58, 'Rumah Tifah', 'Rumah Tifah.jfif', '2022-11-14 20:42:36'),
-(38, 59, 'Rumah abang', 'Rumah abang.jfif', '2022-11-14 20:43:11');
+(38, 59, 'Rumah abang', 'Rumah abang.jfif', '2022-11-14 20:43:11'),
+(40, 61, 'Rumah Sepupu Atika', 'Rumah Sepupu Atika.jfif', '2022-12-05 09:00:07'),
+(41, 62, 'Rumah Nenek Atika', 'Rumah Nenek Atika.jfif', '2022-12-05 09:00:57'),
+(42, 63, 'Rumah Tante Atika', 'Rumah Tante Atika.jpg', '2022-12-05 09:01:30'),
+(43, 64, 'Rumah Paman Atika', 'Rumah Paman Atika.jpg', '2022-12-05 09:02:13'),
+(44, 65, 'Rumah Keponakan Atika', 'Rumah Keponakan Atika.jfif', '2022-12-05 09:03:11');
 
 -- --------------------------------------------------------
 
@@ -73,7 +78,12 @@ INSERT INTO `history` (`id_history`, `id`, `id_user`, `nama`, `alamat`, `jenis`,
 (9, 56, 5, 'Putri Wahdaniyah Iskandar', 'Damanhuri', 'Laundry Sepatu', '2022-11-14 20:39:05'),
 (10, 57, 5, 'Kakaknya Puput', 'AWS', 'Regular Ekonomis', '2022-11-14 20:40:03'),
 (11, 58, 6, 'Latifah Nur Rahmawati', 'Palaran', 'Laundry Exclusive', '2022-11-14 20:42:36'),
-(12, 59, 6, 'Abangnya Tifah', 'Penajam', 'Regular Ekonomis', '2022-11-14 20:43:11');
+(12, 59, 6, 'Abangnya Tifah', 'Penajam', 'Regular Ekonomis', '2022-11-14 20:43:11'),
+(14, 61, 1, 'Sepupunya Atika', 'Saturnus', 'Laundry Bed Cover', '2022-12-05 09:00:07'),
+(15, 62, 1, 'Nenek Atika', 'Kehewanan', 'Laundry Exclusive', '2022-12-05 09:00:57'),
+(16, 63, 1, 'Tante Atika', 'Perjuangan', 'Laundry Sepatu', '2022-12-05 09:01:30'),
+(17, 64, 1, 'Paman Atika', 'Bumi', 'Regular Ekonomis', '2022-12-05 09:02:13'),
+(18, 65, 1, 'Keponakan Atika', 'Gerilya', 'Laundry Sepatu', '2022-12-05 09:03:11');
 
 -- --------------------------------------------------------
 
@@ -101,7 +111,12 @@ INSERT INTO `laundry` (`id`, `id_user`, `nama`, `alamat`, `telpon`, `email`, `je
 (56, 5, 'Putri Wahdaniyah Iskandar', 'Damanhuri', '0876543283', 'puput@gmail.com', 'Laundry Sepatu'),
 (57, 5, 'Kakaknya Puput', 'AWS', '08769876876', 'kakak@gmail.com', 'Regular Ekonomis'),
 (58, 6, 'Latifah Nur Rahmawati', 'Palaran', '08798798989', 'tifah@gmail.com', 'Laundry Exclusive'),
-(59, 6, 'Abangnya Tifah', 'Penajam', '08989898989', 'abanggg@gmail.com', 'Regular Ekonomis');
+(59, 6, 'Abangnya Tifah', 'Penajam', '08989898989', 'abanggg@gmail.com', 'Regular Ekonomis'),
+(61, 1, 'Sepupunya Atika', 'Saturnus', '0989898989', 'sepupugemez@gmail.com', 'Laundry Bed Cover'),
+(62, 1, 'Nenek Atika', 'Kehewanan', '08798790', 'nenekgahul@gmail.com', 'Laundry Exclusive'),
+(63, 1, 'Tante Atika', 'Perjuangan', '08769864362', 'tante@gmail.com', 'Laundry Sepatu'),
+(64, 1, 'Paman Atika', 'Bumi', '078983624181', 'paman123@gmail.com', 'Regular Ekonomis'),
+(65, 1, 'Keponakan Atika', 'Gerilya', '123456789', 'ponakan@gmail.com', 'Laundry Sepatu');
 
 -- --------------------------------------------------------
 
@@ -166,19 +181,19 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT for table `gambar`
 --
 ALTER TABLE `gambar`
-  MODIFY `id_gambar` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=40;
+  MODIFY `id_gambar` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=45;
 
 --
 -- AUTO_INCREMENT for table `history`
 --
 ALTER TABLE `history`
-  MODIFY `id_history` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+  MODIFY `id_history` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
 
 --
 -- AUTO_INCREMENT for table `laundry`
 --
 ALTER TABLE `laundry`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=61;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=66;
 
 --
 -- AUTO_INCREMENT for table `user`
