@@ -26,9 +26,11 @@
 <br><br>
 <div align="center">
     <h2>
+        MANUAL BOOK
         WEB DELIVERY LAUNDRY<br>
         LAUNDRY EXPRESS
     </h2>
+    
 </div>
 <br><br>
 <br>
