@@ -42,8 +42,7 @@
                 <img src="https://github.com/atikamaulidaz/PA_WEB/blob/main/ss/index_about.JPG" alt="unmul" height="200"><br>
                 <img src="https://github.com/atikamaulidaz/PA_WEB/blob/main/ss/index_process.JPG" height="200"><br>
                 Halaman pertama pada website ini adalah halaman yang menampilkan informasi tentang website. Kemudian klik Process di header website dan klik pesan sekarang untuk login akun.<br>
-            </p><br>
-            
+            </p><br>        
     <p align="left">5.	Halaman Login</p>
             <p align="center">
                 <img src="https://github.com/atikamaulidaz/PA_WEB/blob/main/ss/login.JPG" alt="unmul" height="200"><br>
@@ -65,8 +64,7 @@ Ketik Username dan Password sesuai data user yang pernah registrasi untuk login 
             <p align="center">
                 <img src="https://github.com/atikamaulidaz/PA_WEB/blob/main/ss/beranda_user.JPG" alt="unmul" height="200"><br>
                 Halaman pada website adalah tampilan beranda untuk user di dalam beranda ada tampilan header ada beberapa menu yaitu, button berbentuk bulan sabit tersebut untuk mengubah warna tampilan menjadi dark mode, Home untuk kembali ke awal tampilan, profile untuk menampilkan profil user, buat pesanan untuk membuat pesanan laundry, lihat pesanan untuk melihat apakah pesanan user sudah terbuat dan, ada logout jika user sudah selesai menggunakan website tampilan akan kembali ke  menu awal login.<br>
-            </p><br>    
-            
+            </p><br>        
         <p align="left">8.	Tampilan Profile</p>
             <p align="center">
                 <img src="https://github.com/atikamaulidaz/PA_WEB/blob/main/ss/profile.JPG" alt="unmul" height="200"><br>
