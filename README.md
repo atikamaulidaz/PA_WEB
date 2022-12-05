@@ -47,7 +47,15 @@
     <p align="left">5.	Halaman Login</p>
             <p align="center">
                 <img src="https://github.com/atikamaulidaz/PA_WEB/blob/main/ss/login.JPG" alt="unmul" height="200"><br>
-                Halaman pertama pada website ini adalah halaman yang menampilkan informasi tentang website. Kemudian klik Login di header website.<br>
+    <p align="left">Setelah klik Login maka akan menampilkan halaman:<br>
+a.	Login sebagai Admin<br>
+Ketik<br>
+Username 	: admin<br>
+Password	: admin123<br>
+untuk login ke akun admin<br>
+b.	Login sebagai User<br>
+Ketik Username dan Password sesuai data user yang pernah registrasi untuk login ke akun user.</p>
+<br>
             </p><br>
         <p align="left">6.	Halaman Registrasi User</p>
             <p align="center">
