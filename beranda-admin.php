@@ -36,7 +36,7 @@ require "koneksi.php";
     <br><br>
     <div class="cari">
         <form action="" method="get">
-            <input type="search" name="search" id="search" placeholder="Cari Nama" class="search">
+            <input type="search" name="search" id="search" placeholder="Cari Username" class="search">
             <input type="submit" name="submit" value="CARI" class="button-search"> 
         </form>
         &nbsp;
